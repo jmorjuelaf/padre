@@ -1,0 +1,14 @@
+<div class="container top-space" style="background: whitesmoke; padding: 5px">
+    <h3>Elemento hijo</h3>
+    <p>Todo lo que está contenido dentro de este div está declarado en el html
+        correspondiente al elemento hijo.component.html. El siguiente elemento
+        está pasado desde el padre, gracias a la declaración<mark><b>@Input</b>
+        de la clase hijo.component.ts</mark> y la asignación
+        desde el padre.component.html como atributo en el tag del componente.
+        <mark>El elemento comunicado desde el padre es</mark>: 
+        <!--El decorador componenteComunicar guardará el dato pasados desde el padre. 
+        Para utilizarlo en el html solo es necesario llamarlo con interpolación {{}} 
+        para utilizar su contenido-->
+        <strong>{{componenteComunicar}}</strong>
+    </p>
+</div>
